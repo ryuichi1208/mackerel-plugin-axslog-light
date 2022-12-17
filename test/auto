@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "===== test1 ====="
+rm -rf /tmp/0-axslog-v4-nginx; go run ./ --logfile=./test/test1.log --key-prefix=nginx --request-time-key=request_time --upstream-time-key=upstream_response_time
+echo "===== test2 ====="
+rm -rf /tmp/0-axslog-v4-nginx; go run ./ --logfile=./test/test2.log --key-prefix=nginx --request-time-key=request_time --upstream-time-key=upstream_response_time
+echo "===== test3 ====="
+rm -rf /tmp/0-axslog-v4-nginx; go run ./ --logfile=./test/test3.log --key-prefix=nginx --request-time-key=request_time --upstream-time-key=upstream_response_time

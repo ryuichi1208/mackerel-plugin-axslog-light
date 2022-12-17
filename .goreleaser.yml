@@ -1,0 +1,18 @@
+builds:
+  - binary: mackerel-plugin-axslog-light
+    ldflags:
+      - -s -w
+    goos:
+      - linux
+    goarch:
+      - amd64
+      - arm64
+    env:
+      - CGO_ENABLED=0
+archives:
+  - format: zip
+    name_template: "{{ .ProjectName }}_{{ .Os }}_{{ .Arch }}"
+release:
+  github:
+    owner: ryuichi1208
+    name: mackerel-plugin-axslog-light
