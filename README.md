@@ -1,4 +1,8 @@
-# mackerel-plugin-axslog
+# mackerel-plugin-axslog-light
+
+## Overview
+
+This tool is a Mackerel plug-in that calculates the processing time of nginx from the access log, based on "kazeburo/mackerel-plugin-axslog". Only ltsv format is supported for log format (json, there are no plans to support other formats).By specifying the "request_time" and "upstream_response_time" keys, the actual processing time of nginx is measured.
 
 ## Usage
 
@@ -15,4 +19,10 @@ Application Options:
 
 Help Options:
   -h, --help               Show this help message
+```
+
+## Install
+
+``` shell
+$ mkr plugin install ryuichi1208/mackerel-plugin-axslog-light
 ```

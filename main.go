@@ -13,8 +13,8 @@ import (
 	"strings"
 
 	flags "github.com/jessevdk/go-flags"
-	"github.com/kazeburo/mackerel-plugin-axslog/axslog"
 	"github.com/mackerelio/golib/pluginutil"
+	"github.com/ryuichi1208/mackerel-plugin-axslog-light/axslog"
 
 	"github.com/pkg/errors"
 )
