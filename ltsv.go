@@ -41,7 +41,6 @@ func (r *ReaderLTSV) Parse(d1 []byte) (int, []byte, []byte) {
 			break
 		}
 
-		// `-` はskip
 		if bytes.Equal(d1[p1+p3+1:p1+p2], bHif) {
 			p1 += p2 + 1
 			continue
