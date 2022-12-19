@@ -17,8 +17,8 @@ import (
 type CmdOpts struct {
 	LogFile      string `long:"logfile" description:"path to nginx ltsv logfiles. multiple log files can be specified, separated by commas." required:"true"`
 	KeyPrefix    string `long:"key-prefix" description:"Metric key prefix" required:"true"`
-	RequestTime  string `long:"request-time-key" default:"ptime" description:"key name for request_time"`
-	UpstreamTime string `long:"upstream-time-key" default:"ptime" description:"key name for request_time"`
+	RequestTime  string `long:"request-time-key" default:"request_time" description:"key name for request_time"`
+	UpstreamTime string `long:"upstream-time-key" default:"upstream_response_time" description:"key name for upstream_response_time"`
 	Filter       string `long:"filter" default:"" description:"text for filtering log"`
 }
 

@@ -13,8 +13,8 @@ Usage:
 Application Options:
       --logfile=           path to nginx ltsv logfiles. multiple log files can be specified, separated by commas.
       --key-prefix=        Metric key prefix
-      --request-time-key=  key name for request_time (default: ptime)
-      --upstream-time-key= key name for request_time (default: ptime)
+      --request-time-key=  key name for request_time (default: request_time)
+      --upstream-time-key= key name for upstream_response_time (default: upstream_response_time)
       --filter=            text for filtering log
 
 Help Options:
